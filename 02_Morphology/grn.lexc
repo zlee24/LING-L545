@@ -1,0 +1,59 @@
+Multichar_Symbols
+%>                   ! Frontera de morfema
+%<n%>                ! Nombre
+%<gen%>              ! Genitivo
+%<loc%>              ! Locativo
+%<fut%>              ! futuro
+%<der_kue%>          ! Abstraction
+%{m%}                ! 
+%<plu%>              ! Pluralidad
+%<sin%>              ! Singularidad
+%{ng%}               ! 
+
+LEXICON Root
+Nouns ;
+
+LEXICON N
+
+%<n%>: CASE ;
+%<n%>: SUBST ;
+
+LEXICON SUBST
+
+%<der_kue%>:%>%{ng%}ue NUM ;
+
+LEXICON CASE
+
+%<nom%>: NUM ; ! ""
+%<gen%>:%>gui NUM ; ! "de"
+%<loc%>:%>%{m%}e NUM ; ! "a, en"
+%<fut%>:%>rã NUM ;
+
+LEXICON NUM
+
+%<plu%>:%>%{ng%}uéra #;
+%<sin%>: #;
+
+LEXICON Nouns
+
+óga:óga N ; ! "casa"
+irũ:irũ N ; ! "amigo"
+apyka:apyka N ; ! "silla"
+ava:ava N ; ! "raza, gente"
+tembiasa:tembiasa N ; ! "experiencia"
+mbarakaja:mbarakaja N ; ! "gato"
+jagua:jagua N ; ! "perro"
+mitã:mitã N ; ! "niño"
+avatisoka:avatisoka N ; ! "mano"
+okẽ:okẽ N ; ! "door"
+para:para N ; ! "mar"
+resa:resa N ; ! "ojo"
+pira:pira N ; ! "pez"
+rata:rata N ; ! "fuego"
+kuña:kuña N ; ! "mujer"
+tatatĩ:tatatĩ N ; ! "fumo"
+rete:rete N ; ! "cuerpo"
+mboka:mboka N ; ! "arma"
+kuarepotitĩ:kuarepotitĩ N ; ! "plato"
+aguara:aguara N ; ! "zorro"
+arateĩ:arateĩ N ; ! "domingo"
